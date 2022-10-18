@@ -1,0 +1,25 @@
+services:
+  web1:
+     
+    image: gudditi/resume:latest
+    container_name: webapp1
+    ports:
+      - '80:80'
+    networks:
+      - network-example
+  web2:
+
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: webapp2
+    ports:
+      - '90:80'
+    networks:
+      - network-example
+
+
+
+networks:
+  network-example:
+    external: true
