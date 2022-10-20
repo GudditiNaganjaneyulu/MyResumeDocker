@@ -17,6 +17,8 @@ services:
       - '90:80'
     networks:
       - network-example
+    depends_on:
+      - web1
 
 
 
