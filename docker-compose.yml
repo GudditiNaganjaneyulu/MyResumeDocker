@@ -14,7 +14,7 @@ services:
       context: .
     container_name: webapp2
     ports:
-      - '100:80'
+      - '90:80'
     networks:
       - network-example
     depends_on:
