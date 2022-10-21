@@ -12,7 +12,8 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
-    container_name: webapp2
+    container_name: web2
+    image: gudditi/resume:latest
     ports:
       - '90:80'
     networks:

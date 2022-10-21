@@ -1,0 +1,76 @@
+[33mcommit 9c4b527724c89fd0c541c61e8ccb1643f2856007[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mresume/master[m[33m)[m
+Author: GudditiNaganjaneyulu <gudditinaganjaneyulu@gmail.com>
+Date:   Fri Oct 21 13:05:18 2022 +0530
+
+     my new port chaange
+
+[33mcommit 1dd9c522512dcb0a9ffd21f70473320c8546a647[m
+Author: GudditiNaganjaneyulu <gudditinaganjaneyulu@gmail.com>
+Date:   Fri Oct 21 12:04:50 2022 +0530
+
+    Revert "making changes to port" ( Please Ignore this commited chnages
+    made port changes and reverted to previous version)
+    
+    This reverts commit 1ce7ec17cf43981617f7a02cde5fb85540d878be.
+
+[33mcommit 1ce7ec17cf43981617f7a02cde5fb85540d878be[m
+Author: GudditiNaganjaneyulu <gudditinaganjaneyulu@gmail.com>
+Date:   Fri Oct 21 12:03:29 2022 +0530
+
+    making changes to port
+
+[33mcommit 303853deb9b9bd7dd01514697c7413e3bcedc0eb[m
+Author: GudditiNaganjaneyulu <gudditinaganjaneyulu@gmail.com>
+Date:   Thu Oct 20 13:39:47 2022 +0530
+
+     changes made in file
+
+[33mcommit a8a706c21348e8885ed21e5aa425b7e6d59d7f5c[m
+Author: GudditiNaganjaneyulu <gudditinaganjaneyulu@gmail.com>
+Date:   Thu Oct 20 13:25:37 2022 +0530
+
+     depends on added dependency to docker container
+
+[33mcommit b234dd69c293e887223a858422cac019705630fb[m
+Merge: f7ccc51 8a730e6
+Author: GudditiNaganjaneyulu <gudditinaganjaneyulu@gmail.com>
+Date:   Thu Oct 20 13:21:48 2022 +0530
+
+    Merge branch 'master' of https://github.com/GudditiNaganjaneyulu/MyResumeDocker
+
+[33mcommit f7ccc51f799fd25c9cbc1aa92baf3f069576fab3[m
+Author: GudditiNaganjaneyulu <gudditinaganjaneyulu@gmail.com>
+Date:   Thu Oct 20 13:21:07 2022 +0530
+
+     changed in docker file
+
+[33mcommit 8a730e67f3ee9f5ae7718d6961a8d1bbb2aa3daf[m
+Author: GudditiNaganjaneyulu <87116202+GudditiNaganjaneyulu@users.noreply.github.com>
+Date:   Thu Oct 20 13:17:51 2022 +0530
+
+    Update README.md
+
+[33mcommit 0e1f0b189011acbe843f4640de51fdea6651a7e7[m
+Merge: 3f4292a 3aff3a0
+Author: GudditiNaganjaneyulu <gudditinaganjaneyulu@gmail.com>
+Date:   Thu Oct 20 13:15:59 2022 +0530
+
+    Merge https://github.com/GudditiNaganjaneyulu/MyResumeDocker
+
+[33mcommit 3f4292a98e7a1733085dd3c7465c69922ca509a1[m
+Author: GudditiNaganjaneyulu <gudditinaganjaneyulu@gmail.com>
+Date:   Thu Oct 20 13:14:23 2022 +0530
+
+     changes made in compose files
+
+[33mcommit 3aff3a048e7bb85a97263309d4598262328586ac[m
+Author: GudditiNaganjaneyulu <87116202+GudditiNaganjaneyulu@users.noreply.github.com>
+Date:   Thu Oct 20 13:13:48 2022 +0530
+
+    Create README.md
+
+[33mcommit 4958a5407b46340b3bba781bf4d33b11013f1f67[m
+Author: GudditiNaganjaneyulu <gudditinaganjaneyulu@gmail.com>
+Date:   Thu Oct 20 12:52:09 2022 +0530
+
+      updates done from local
