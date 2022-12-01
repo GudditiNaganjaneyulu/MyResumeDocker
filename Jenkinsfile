@@ -4,7 +4,7 @@ pipeline {
         stage ('PreConfig'){
             steps {
                 echo 'PreConfig .....'
-                sh 'sudo chmod 666 /var/run/docker.sock'
+             
    
             }
         }
