@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:1-bullseye
 MAINTAINER Gudditi
 WORKDIR  /usr/share/nginx/html
 COPY ./index/ .
