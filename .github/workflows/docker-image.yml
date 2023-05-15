@@ -22,4 +22,4 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Push image with build number tag
-      run: docker push gudditi/resume:latest${{ github.run_number }}
+      run: docker push gudditi/resume:latest
