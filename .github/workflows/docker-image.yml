@@ -39,4 +39,4 @@ jobs:
     - name: Analyze Trivy scan results
       run: |
         # Perform analysis on the downloaded Trivy scan results
-        # Example: cat trivy-results/trivy-results.json
+        cat trivy-results/trivy-results.json
