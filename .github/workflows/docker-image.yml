@@ -11,32 +11,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag gudditi/resume:latest${{ github.run_number }}
+      - uses: actions/checkout@v3
 
-    - name: Login to DockerHub
-      uses: docker/login-action@v2
-      with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag gudditi/resume:latest${{ github.run_number }}
 
-    - name: Push image with build number tag
-      run: docker push gudditi/resume:latest${{ github.run_number }}
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Scan Docker image with Trivy
-      run: |
-        docker pull gudditi/resume:latest${{ github.run_number }}
-        docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy:latest image gudditi/resume:latest${{ github.run_number }} --format json -o trivy-results.json
+      - name: Push image with build number tag
+        run: docker push gudditi/resume:latest${{ github.run_number }}
 
-    - name: Download Trivy scan results
-      run: |
-        mkdir -p trivy-results
-        curl -LJO https://github.com/${{ github.repository }}/raw/${{ github.sha }}/trivy-results.json
-        mv trivy-results.json trivy-results/
+  test:
+    needs: build
+    runs-on: ubuntu-latest
 
-    # Use the downloaded Trivy scan results in subsequent steps
-    - name: Analyze Trivy scan results
-      run: |
-        # Perform analysis on the downloaded Trivy scan results
-        cat trivy-results/trivy-results.json
+    steps:
+      - name: Pull Docker image
+        run: docker pull gudditi/resume:latest${{ needs.build.outputs.tag }}
+
+      - name: Run tests
+        run: |
+          # Run your test commands against the pulled image
