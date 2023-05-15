@@ -33,6 +33,14 @@ jobs:
       - name: Pull Docker image
         run: docker pull gudditi/resume:latest${{ needs.build.outputs.tag }}
 
-      - name: Run tests
-        run: |
-          # Run your test commands against the pulled image
+      - name: Run container
+        run: docker run -d -p 8080:80 gudditi/resume:latest${{ needs.build.outputs.tag }}
+
+      - name: Wait for container to start
+        run: sleep 5s
+
+      - name: Curl to container
+        run: curl http://localhost:8080
+
+      - name: Tail container logs
+        run: docker logs $(docker ps -lq)
